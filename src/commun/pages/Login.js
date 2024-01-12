@@ -2,7 +2,6 @@ import {useState} from "react";
 
 import "../styles/login_style.css";
 import AuthenticationApiService from "../apis/AuthenticationApiService";
-import { jwtDecode } from "jwt-decode";
 import {useNavigate} from "react-router-dom";
 const Login = () => {
     const [error, setError] = useState("");
@@ -43,7 +42,6 @@ const Login = () => {
                             placeholder="Username"
                             name="username"
                             onChange={(e) => setUsername(e.target.value)}
-                            value={username}
                             className={"input"}
                         />
                         <input
@@ -51,7 +49,6 @@ const Login = () => {
                             placeholder="Password"
                             name="password"
                             onChange={(e) => setPassword(e.target.value)}
-                            value={password}
                             className={"input"}
                         />
                         {error && <div className={"error_msg"}>{error}</div>}

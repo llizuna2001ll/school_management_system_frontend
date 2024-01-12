@@ -13,7 +13,7 @@ class AuthenticationApiService {
             localStorage.setItem('userId', userId);
             localStorage.setItem('authority', authority);
             localStorage.setItem('username', sub);
-
+            console.log(userId);
             return response.data;
 
         } catch (error) {

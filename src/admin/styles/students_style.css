@@ -1,0 +1,10 @@
+.students-table{
+    width: 1000px;
+    margin: 0 auto;
+}
+.students-table {
+    border-radius: 10px;
+}
+.table-cursor{
+    cursor: pointer;   
+}

@@ -6,10 +6,16 @@ import Face6Icon from '@mui/icons-material/Face6';
 import ScienceIcon from '@mui/icons-material/Science';
 import Face2Icon from '@mui/icons-material/Face2';
 import InfoIcon from '@mui/icons-material/Info';
+import {useNavigate} from "react-router-dom";
+
 function AdminHome() {
+    const navigate = useNavigate();
     return (
         <>
-            <h1 className="text-center mb-5 page-title">Student Management System</h1>
+            <div className={"header"}>
+                <h3 className="ms-4 page-title">Student Management System</h3>
+                <div className="me-4 user-greeting">{localStorage.getItem("username")}</div>
+            </div>
             <div className="features">
                 <div className="feature-container">
                     <ListAltIcon sx={{fontSize: 60}}/>
@@ -19,7 +25,7 @@ function AdminHome() {
                     <Groups2Icon sx={{fontSize: 60}}/>
                     <h2>Présences</h2>
                 </div>
-                <div className="feature-container">
+                <div onClick={() => navigate("/etudiants")} className="feature-container">
                     <div className={"d-flex"}><Face6Icon sx={{fontSize: 60}}/>
                         <Face3Icon sx={{fontSize: 60}}/></div>
                     <h2>Etudiants</h2>
