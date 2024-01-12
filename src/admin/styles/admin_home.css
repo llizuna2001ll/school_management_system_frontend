@@ -1,0 +1,27 @@
+.page-title {
+    margin-top: 3%;
+    font-family: 'Salsa', cursive;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 20px;
+}
+
+.feature-container {
+    border: 1px black solid;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #18477C;
+    color: white;
+    font-family: 'Salsa', cursive;
+}
+
